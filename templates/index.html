@@ -1,46 +1,154 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Ease Event</title>
-    <meta name="description" content="Best Staying Option For Working Profationals and Students">
-	<link rel="icon" type="image/x-icon" href="/static/images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/static/fontawesome/css/all.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+{% extends 'base.html' %}
+{% block 'title' %}Home | EaseEvent{% endblock 'title' %}
+{% block 'content' %}
+    <div class="home-banner">
 
-<body>
-    <header>
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-auto">
-                    <h1 class="logo"><a href="#">EaseEvent</a></h1>
-                </div>
-                <div class="col-auto">
-                    
-                </div>
+    </div>
+
+    <div class="py-10 sm:py-20">
+        <div class="container mx-auto">
+            <h2 class="text-5xl text-black mb-7">Explore Categories</h2>
+            <div class="flex gap-9 justify-center">
+                <figure class="cat-box text-center overflow-hidden">
+                    <a href="#">
+                        <img src="/static/images/cat1.jpg" alt="" class="rounded-full mx-auto">
+                        <figcaption class="text-xl text-black font-semibold mt-3">Entertainment</figcaption>
+                    </a>
+                </figure>
+                <figure class="cat-box text-center">
+                    <a href="#">
+                        <img src="/static/images/cat2.jpg" alt="" class="rounded-full mx-auto">
+                        <figcaption class="text-xl text-black font-semibold mt-3">Educational</figcaption>
+                    </a>
+                </figure>
+                <figure class="cat-box text-center">
+                    <a href="#">
+                        <img src="/static/images/cat3.jpg" alt="" class="rounded-full mx-auto">
+                        <figcaption class="text-xl text-black font-semibold mt-3">Cultural & Arts</figcaption>
+                    </a>
+                </figure>
+                <figure class="cat-box text-center">
+                    <a href="#">
+                        <img src="/static/images/cat4.jpg" alt="" class="rounded-full mx-auto">
+                        <figcaption class="text-xl text-black font-semibold mt-3">Sports</figcaption>
+                    </a>
+                </figure>
+                <figure class="cat-box text-center">
+                    <a href="#">
+                        <img src="/static/images/cat5.jpg" alt="" class="rounded-full mx-auto">
+                        <figcaption class="text-xl text-black font-semibold mt-3">Technology</figcaption>
+                    </a>
+                </figure>
+                <figure class="cat-box text-center">
+                    <a href="#">
+                        <img src="/static/images/cat6.jpg" alt="" class="rounded-full mx-auto">
+                        <figcaption class="text-xl text-black font-semibold mt-3">Travel & Adventure</figcaption>
+                    </a>
+                </figure>
             </div>
         </div>
-    </header>
+    </div>
 
-    <main class="site">
-        
-    </main>
+    <div class="pb-10 sm:pb-20">
+        <div class="container mx-auto">
+            <h2 class="text-5xl text-black mb-7">Popular Events in Mumbai</h2>
+        </div>
+        <div class="container mx-auto grid grid-cols-3 gap-7">
+            <div class="overflow-hidden rounded-md shadow transition-all hover:shadow-lg">
+                <a href="#">
+                    <figure><img src="/static/images/event.jpg" alt=""></figure>
+                    <div class="px-2 pt-4 pb-5 flex">
+                        <div class="w-20 text-center">
+                            <h5 class="text-uppercase text-blue text-2xl font-bold">NOV</h5>
+                            <h5 class="text-gray text-2xl font-semibold">25 - 26</h5>
+                            
+                        </div>
+                        <div class="ml-4">
+                            <h6 class="text-gray4 text-xl font-semibold mb-2">Lakeside Camping at Pawna</h6>
+                            <p class="text-lg font-medium text-text mb-2">Adventure Geek - Explore</p>
+                            <p class="text-text mb-2">8:30 AM - 7:30 PM</p>
+                            <p class="flex items-center gap-4">
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/ticket.svg" alt=""> $140</span>
+                                <span class="w-2 h-2 rounded-full bg-text"></span>
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/star.svg" alt=""> 15</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="overflow-hidden rounded-md shadow hover:shadow-lg">
+                <a href="#">
+                    <figure><img src="/static/images/event.jpg" alt=""></figure>
+                    <div class="px-2 pt-4 pb-5 flex">
+                        <div class="w-20 text-center">
+                            <h5 class="text-uppercase text-blue text-2xl font-bold">NOV</h5>
+                            <h5 class="text-gray text-2xl font-semibold">25 - 26</h5>
+                            
+                        </div>
+                        <div class="ml-4">
+                            <h6 class="text-gray4 text-xl font-semibold mb-2">Lakeside Camping at Pawna</h6>
+                            <p class="text-lg font-medium text-text mb-2">Adventure Geek - Explore</p>
+                            <p class="text-text mb-2">8:30 AM - 7:30 PM</p>
+                            <p class="flex items-center gap-4">
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/ticket.svg" alt=""> $140</span>
+                                <span class="w-2 h-2 rounded-full bg-text"></span>
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/star.svg" alt=""> 15</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="overflow-hidden rounded-md shadow hover:shadow-lg">
+                <a href="#">
+                    <figure><img src="/static/images/event.jpg" alt=""></figure>
+                    <div class="px-2 pt-4 pb-5 flex">
+                        <div class="w-20 text-center">
+                            <h5 class="text-uppercase text-blue text-2xl font-bold">NOV</h5>
+                            <h5 class="text-gray text-2xl font-semibold">25 - 26</h5>
+                            
+                        </div>
+                        <div class="ml-4">
+                            <h6 class="text-gray4 text-xl font-semibold mb-2">Lakeside Camping at Pawna</h6>
+                            <p class="text-lg font-medium text-text mb-2">Adventure Geek - Explore</p>
+                            <p class="text-text mb-2">8:30 AM - 7:30 PM</p>
+                            <p class="flex items-center gap-4">
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/ticket.svg" alt=""> $140</span>
+                                <span class="w-2 h-2 rounded-full bg-text"></span>
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/star.svg" alt=""> 15</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="overflow-hidden rounded-md shadow hover:shadow-lg">
+                <a href="#">
+                    <figure><img src="/static/images/event.jpg" alt=""></figure>
+                    <div class="px-2 pt-4 pb-5 flex">
+                        <div class="w-20 text-center">
+                            <h5 class="text-uppercase text-blue text-2xl font-bold">NOV</h5>
+                            <h5 class="text-gray text-2xl font-semibold">25 - 26</h5>
+                            
+                        </div>
+                        <div class="ml-4">
+                            <h6 class="text-gray4 text-xl font-semibold mb-2">Lakeside Camping at Pawna</h6>
+                            <p class="text-lg font-medium text-text mb-2">Adventure Geek - Explore</p>
+                            <p class="text-text mb-2">8:30 AM - 7:30 PM</p>
+                            <p class="flex items-center gap-4">
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/ticket.svg" alt=""> $140</span>
+                                <span class="w-2 h-2 rounded-full bg-text"></span>
+                                <span class="flex gap-2 font-semibold text-lg"><img src="/static/images/star.svg" alt=""> 15</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto mt-12 text-center">
+            <a href="#" class="border border-gray text-gray rounded py-2 w-60 inline-block hover:text-white hover:bg-gray">See All</a>
+        </div>
+    </div>
 
+{% endblock 'content' %}
     
-    
-	
 
-    
-
-	<script src="/static/js/bootstrap.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script src="/static/js/script.js"></script>
-</body>
-
-</html>
+<!-- https://www.figma.com/community/file/1333511352060631329 -->
