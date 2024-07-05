@@ -21,5 +21,6 @@ from core.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page, name='home'),
-
+    path('evet-details/', event_details, name='evet-details'),
+    path('book/', book, name='book'),
 ]
